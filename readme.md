@@ -8,7 +8,7 @@ herencia y polimorfismo en C++
 * Implementar relaciones de herencia
 * Implementar comportamientos polimórficos 
 
-Puede ver un ejemplo de implementación de herencia en C++ con polimorfismo en:
+Puede ver un ejemplo (realizado en clase) de implementación de herencia en C++ con polimorfismo en:
 https://github.com/300CIS017-Object-Oriented-Programming/HerenciaPOO
 
 ## Requerimientos funcionales
