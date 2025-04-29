@@ -1,43 +1,47 @@
-# Figuras geométricas 
+# Figuras geométricas: Aplicación de Herencia y Polimorfismo en C++
 
-Este ejercicicio ayuda a prácticar conceptos relacionados con
-herencia y polimorfismo en C++ (PUEDE HACERSE EN PAREJAS)
+Este ejercicio tiene como finalidad afianzar los conceptos de **herencia** y **polimorfismo** en el lenguaje de programación C++, a través del diseño e implementación de un sistema orientado a objetos para la representación y manipulación de figuras geométricas. La actividad pone énfasis en el diseño estructurado mediante clases, la reutilización de código y el comportamiento dinámico de los objetos.
 
-## Objetivos de aprendizaje
-* Diseñar un diagrama UML considerando relaciones de herencia
-* Implementar relaciones de herencia
-* Implementar comportamientos polimórficos 
+## 🎯 Objetivos de aprendizaje
 
-Puede ver un ejemplo (realizado en clase) de implementación de herencia en C++ con polimorfismo en:
-https://github.com/300CIS017-Object-Oriented-Programming/HerenciaPOO
+Al finalizar este ejercicio, el estudiante será capaz de:
 
-## Requerimientos funcionales
-Se pide construir un programa para manipular figuras geométricas. Tomaremos tres tipos específicos de figuras geométricas: circulo, cuadrado y triángulo equilátero.
-Para cada figura geométrica el programa debería permitir: 
-1. Dibujar una representación de la figura geométrica en pantalla (puede hacerlo por ejemplo usando asteríscos * imprimiendo una cadena con la figura correcta)
-2. Calcular el área de la figura geométrica
-3. Calcular el perímetro de la figura geométrica
+- Diseñar un modelo orientado a objetos que utilice relaciones de herencia entre clases, representado mediante un diagrama UML.
+- Implementar una jerarquía de clases en C++ que haga uso de herencia.
+- Aplicar el principio de polimorfismo a través de la sobrescritura de métodos en clases derivadas.
 
-Su programa debe permitir
-* Agregar figuras geométricas al programa de cualquier tipo disponible
-* Dibujar todas las figuras geométricas disponibles 
-* Mostrar el área de todas las figuras geométricas agregadas
-* Mostrar el perímetro de todas las figuras geométricas agregadas
-* Sumar el área de todas las figuras geométricas agregadas al programa.
+Se recomienda revisar el siguiente ejemplo como referencia técnica: 👉 [Ejemplo de herencia y polimorfismo en C++](https://github.com/300CIS017-Object-Oriented-Programming/HerenciaPOO)
 
-Además debe
-* Incorporar un nuevo tipo de figura geométrica
-* Permitir que la figura geométrica se pueda dibujar en consola utilizando algún color(usted define el color)
-* Para el punto anterior construya una clase abstracta que obligue a impletementar el método pintar() para darle color a la impresión
+## ✅ Requerimientos funcionales
 
-## Requerimientos no funcionales
-* Use relaciones de herencia entre clases
-* No tenga interacción por consola desde las clases directamente, debe haber una clase especializada en la comunicación con el usuario
-* Use sobreescritura de métodos entre clases para lograr polimorfismo para los métodos que permiten *mostrar la figura*, *calcular el área* y el *perímetro*. Recuerde que para lograr este comportamiento los métodos se deben llamar igual en la clase padre y en las clases hijas.
+El sistema debe permitir representar y operar sobre distintas figuras geométricas. Inicialmente se trabajará con tres figuras: **círculo**, **cuadrado** y **triángulo equilátero**. Para cada una, se deberá implementar la siguiente funcionalidad:
 
-> Agregue un gitignore a su repositorio y haga las verificaciones necesarias para garantizar la calidad de su código
+- Generar una representación gráfica simple en consola (por ejemplo, utilizando caracteres como el asterisco `*`).
+- Calcular y mostrar el área de la figura.
+- Calcular y mostrar el perímetro de la figura.
 
-## Entregables
-* Diagrama UML -> PNG o PDF 
-* Código fuente subido al github classroom
-Trabajo para realizarse de forma individual o de máximo 2 personas
+Además, el sistema deberá permitir:
+
+- Registrar múltiples figuras geométricas de distintos tipos.
+- Mostrar en consola la representación de todas las figuras almacenadas.
+- Presentar el área y el perímetro de cada figura agregada.
+- Calcular y mostrar el área total de todas las figuras registradas.
+
+### Requerimientos adicionales
+
+- Incorporar al menos una nueva figura geométrica adicional, no incluida en las iniciales.
+- Implementar un mecanismo para colorear la representación de las figuras en la consola (por ejemplo, mediante códigos ANSI).
+- Diseñar una clase abstracta que defina el método `pintar()`, el cual deberá ser implementado obligatoriamente por todas las figuras para establecer su color de impresión.
+
+## ⚙️ Requerimientos no funcionales
+
+- La solución debe implementar relaciones de herencia de manera adecuada y explícita.
+- Se debe aplicar polimorfismo mediante la sobrescritura de métodos, tales como `dibujar()`, `calcularArea()` y `calcularPerimetro()`, manteniendo las mismas firmas en la clase base y en las derivadas.
+- Se recomienda incorporar un archivo `.gitignore` en el repositorio para excluir del repo carpetas de archivos de compilación como la carpeta cmake-build-debug y la .idea.
+- Organice el proyecto en carpetas, en el ejemplo puede ver una estructura de directorios que podría seguir.
+
+## 📦 Entregables
+
+- Diagrama UML desarrollado con sintaxis **Mermaid**.
+- Código fuente documentado y subido al repositorio de **GitHub Classroom** correspondiente.
+- El trabajo debe ser realizado en equipos de **tres (3) estudiantes**. Se evaluará el trabajo en clase más que el producto final.
