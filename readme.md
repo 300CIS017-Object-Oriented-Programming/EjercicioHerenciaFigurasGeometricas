@@ -45,3 +45,23 @@ Además, el sistema deberá permitir:
 - Diagrama UML desarrollado con sintaxis **Mermaid**.
 - Código fuente documentado y subido al repositorio de **GitHub Classroom** correspondiente.
 - El trabajo debe ser realizado en equipos de **tres (3) estudiantes**. Se evaluará el trabajo en clase más que el producto final.
+
+
+## Contenido de apoyo
+
+### 1. Herencia en Programación Orientada a Objetos
+✅ ¿Qué es la herencia?
+La herencia es una característica fundamental de la programación orientada a objetos que permite que una clase nueva (llamada clase derivada o subclase) herede atributos y métodos de otra clase existente (llamada clase base o superclase).
+
+Esto facilita:
+
+* 🔁 Reutilización de código (no repetir lo común entre clases).
+* 🧩 Especialización de comportamientos (las subclases pueden modificar o extender funcionalidades).
+* 🏛️ Organización jerárquica del diseño del software.
+
+#### 🌍 Analogía del mundo real
+* 🔹 Ejemplo 1: Empleados
+Clase base: Empleado (tiene nombre, salario, trabajar()).
+
+Clases derivadas: Ingeniero, Diseñador, Gerente.
+Todos son empleados, pero sus tareas (trabajar()) pueden variar. Y todos comparten datos comunes como el nombre y el salario.
